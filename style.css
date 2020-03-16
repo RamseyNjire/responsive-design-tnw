@@ -173,6 +173,14 @@ a {
     background-size: 16px 16px;
   }
 
+  .latest-news-article-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 2.5rem 2rem 0;
+  }
+
   .latest-news-article {
     display: flex;
     padding: 8px;
@@ -194,8 +202,22 @@ a {
     flex-direction: column;
   }
 
+  .latest-news-header > a {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
   .details-span {
-    margin-top: 8px;
+    margin-top: 1.5rem;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 400;
+  }
+
+  .details-span > a {
+    color: inherit;
+    font-size: inherit;
   }
 }
 
@@ -352,6 +374,33 @@ a {
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
   }
+
+  .latest-news-article-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .latest-news-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-article-image {
+    height: 120px;
+    margin-bottom: 8px;
+  }
+
+  .latest-news-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-news-header > a {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width:1024px) {
@@ -363,5 +412,10 @@ a {
   }
   .tnw-logo {
     display: none;
+  }
+
+  .latest-news-article-holder {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
