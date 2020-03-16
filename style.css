@@ -146,6 +146,57 @@ a {
     z-index: 2;
   }
 
+  .latest-news {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header a {
+    color: #f42;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .caret {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+    background-size: 16px 16px;
+  }
+
+  .latest-news-article {
+    display: flex;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .news-article-image {
+    display: block;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/header-image-MacBook-Touch-Bar-buttons-1-516x270.png");
+    background-position: 50%;
+    background-size: cover;
+    min-width: 75px;
+    min-height: 75px;
+    margin-right: 8px;
+  }
+
+  .latest-news-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-span {
+    margin-top: 8px;
+  }
 }
 
  @media screen and (min-width: 768px) {
