@@ -1,8 +1,11 @@
 body {
-  /* background: orange; */
+  max-width: 100vw;
   font-family: arial;
 }
 
+.section-article-heading {
+  display: none;
+}
 
 .tnw-logo {
   display: flex;
@@ -53,7 +56,7 @@ a {
   background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .nav-bar-holder {
     height: 3rem;
@@ -148,7 +151,7 @@ a {
 
   .latest-news {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -173,52 +176,61 @@ a {
     background-size: 16px 16px;
   }
 
-  .latest-news-article-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-    padding: 2.5rem 2rem 0;
+  .latest-news-article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 12px;
   }
 
   .latest-news-article {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 8px;
+  }
+
+  .article-image-anchor {
+    display: block;
+    color: inherit;
+    min-height: 72px;
+    min-width: 75px;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/stress-516x270.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .article-details {
+    justify-self: center;
+    align-self: center;
     display: flex;
-    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-details h4 {
     margin-bottom: 8px;
   }
 
-  .news-article-image {
-    display: block;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/header-image-MacBook-Touch-Bar-buttons-1-516x270.png");
-    background-position: 50%;
-    background-size: cover;
-    min-width: 75px;
-    min-height: 75px;
-    margin-right: 8px;
-  }
-
-  .latest-news-header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .latest-news-header > a {
+  .article-details h4 > a {
     color: inherit;
-    font-size: 14px;
     font-weight: 700;
+    font-size: 16px;
   }
 
-  .details-span {
-    margin-top: 1.5rem;
+  .article-details ul > a, .article-details ul > span {
     font-size: 12px;
     color: #aaa;
-    font-weight: 400;
   }
 
-  .details-span > a {
-    color: inherit;
-    font-size: inherit;
+  .categories {
+    background: #aaa;
+    min-height: 100px;
+    padding: 10px;
   }
+
+  .category
 }
 
  @media screen and (min-width: 768px) {
@@ -375,31 +387,79 @@ a {
     background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
   }
 
-  .latest-news-article-holder {
+  .latest-news {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header a {
+    color: #f42;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .caret {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+    background-size: 16px 16px;
+  }
+
+  .latest-news-article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 12px;
   }
 
   .latest-news-article {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+    grid-gap: 8px;
   }
 
-  .news-article-image {
-    height: 120px;
+  .article-image-anchor {
+    display: block;
+    color: inherit;
+    min-height: 72px;
+    min-width: 75px;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/stress-516x270.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .article-details {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-details h4 {
     margin-bottom: 8px;
   }
 
-  .latest-news-header {
-    display: flex;
-    flex-direction: column;
+  .article-details h4 > a {
+    color: inherit;
+    font-weight: 700;
+    font-size: 16px;
   }
 
-  .latest-news-header > a {
-    color: inherit;
-    font-size: 14px;
-    font-weight: 700;
+  .article-details ul > a, .article-details ul > span {
+    font-size: 12px;
+    color: #aaa;
   }
 }
 
@@ -414,7 +474,12 @@ a {
     display: none;
   }
 
-  .latest-news-article-holder {
+  .latest-news {
+    padding: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .latest-news-article-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
