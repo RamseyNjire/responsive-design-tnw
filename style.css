@@ -225,12 +225,29 @@ a {
   }
 
   .categories {
-    background: #aaa;
+    /* background: #aaa; */
     min-height: 100px;
-    padding: 10px;
+    padding: 1.2rem;
+    padding-bottom: 10px;
   }
 
-  .category
+  .category-article {
+    /* background: white; */
+    min-height: 50px;
+    padding-bottom: 10px;
+  }
+
+  .category-image {
+    min-height: 250px;
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/iPhone-SE-hed-368x276.jpg");
+    background-size: cover;
+    /* border: 1px solid black; */
+  }
+
+  .inner-details {
+    min-height: 250px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  }
 }
 
  @media screen and (min-width: 768px) {
