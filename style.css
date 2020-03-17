@@ -56,7 +56,11 @@ a {
   background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
 }
 
-@media screen and (max-width: 767px) {
+.red {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
 
   .nav-bar-holder {
     height: 3rem;
@@ -294,7 +298,7 @@ a {
   .main-menu {
     font-size: 14px;
     font-weight: 600;
-    padding: 0 0 0 12px;
+    padding: 0;
   }
 
 
@@ -310,6 +314,10 @@ a {
   .search-menu li {
     border-left: 1px solid #eee;
     padding-left: 10px;
+  }
+
+  .search-menu li:nth-child(2) {
+    display: none;
   }
 
   #menu {
@@ -464,6 +472,7 @@ a {
 }
 
 @media screen and (min-width:1024px) {
+  
   #main-menu-links li:nth-last-child(2), #main-menu-links li:nth-last-child(1) {
     display: block;
   }
@@ -482,5 +491,41 @@ a {
   .latest-news-article-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .cover-story {
+    height: 50vh!important;
+  }
+
+  .red {
+    display: block;
+    background: url("images/cover-gradient.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .red img {
+    max-width: 50%;
+  }
+
+  .logo-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+    background-size: contain;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    line-height: 1;
+    top: 24px;
   }
 }
