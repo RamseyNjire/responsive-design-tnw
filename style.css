@@ -53,6 +53,10 @@ a {
   background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
 }
 
+.red {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
   .nav-bar-holder {
@@ -316,5 +320,41 @@ a {
   }
   .tnw-logo {
     display: none;
+  }
+
+  .cover-story {
+    height: 50vh!important;
+  }
+
+  .red {
+    display: block;
+    background: url("images/cover-gradient.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .red img {
+    max-width: 50%;
+  }
+
+  .logo-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+    background-size: contain;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    line-height: 1;
+    top: 24px;
   }
 }
