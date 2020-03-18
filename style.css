@@ -168,6 +168,50 @@ a {
   display: none;
 }
 
+.latest-deals header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.deal-1 {
+  background: url("images/latest-deals-1.jpg");
+}
+
+.deal-2 {
+  background: url("images/latest-deals-2.jpg");
+}
+
+.deal-3 {
+  background: url("images/latest-deals-3.jpg");
+}
+
+.deal-4 {
+  background: url("images/latest-deals-4.jpg");
+}
+
+.deal-5 {
+  background: url("images/latest-deals-5.jpg");
+}
+.deal-6 {
+  background: url("images/latest-deals-6.jpg");
+}
+
+.deal-7 {
+  background: url("images/latest-deals-7.jpg");
+}
+.deal-8 {
+  background: url("images/latest-deals-8.jpg");
+}
+
+
+del {
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -379,7 +423,63 @@ a {
     padding: 10px;
   }
 
-  .category
+  /* .category */
+
+  .latest-deals {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .latest-deals-article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 12px;
+  }
+
+  .latest-deals-article {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 8px;
+  }
+  .deals-image-anchor {
+    display: block;
+    color: inherit;
+    min-height: 72px;
+    min-width: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .latest-deal-details{
+    justify-self: left;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .latest-deal-details h4 {
+    margin-bottom: 8px;
+  }
+
+  .latest-deal-details h4 > a {
+    color: inherit;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .article-details ul > a, .article-details ul > span {
+    font-size: 12px;
+    color: #aaa;
+  }
+
 }
 
  @media screen and (min-width: 768px) {
@@ -634,6 +734,18 @@ a {
     font-size: 12px;
     color: #aaa;
   }
+
+  .deals-image-anchor {
+    display: block;
+    color: inherit;
+    min-height: 72px;
+    min-width: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  
 }
 
 @media screen and (min-width:1024px) {
