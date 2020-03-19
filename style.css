@@ -1037,4 +1037,9 @@ del {
     padding: 6rem;
     margin-bottom: 6rem;
   }
+
+  .latest-deals-article-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
