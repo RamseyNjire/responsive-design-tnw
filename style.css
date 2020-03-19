@@ -296,6 +296,7 @@ footer {
     align-items: center;
     height: 3rem;
     background: #fff;
+    z-index: 999;
   }
 
   .tnw-logo {
@@ -636,9 +637,12 @@ footer {
 
 
   nav {
+    width: 100%;
+    margin-top: 5rem;
     height: 5rem;
     display: flex;
     color: #eee;
+    z-index: 999;
   }
 
   .tnw-logo img {
@@ -665,6 +669,8 @@ footer {
   }
 
   .main-menu {
+    position: sticky;
+    top: 0;
     display: flex;
     font-size: 13px;
     font-weight: 500;
@@ -674,6 +680,7 @@ footer {
     align-items: center;
     background: white;
     color: black;
+    z-index: 999;
   }
 
   .main-menu {
