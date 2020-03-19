@@ -209,6 +209,20 @@ del {
   color: #aaa;
 }
 
+.latest-deal-details h4 {
+  margin-bottom: 8px;
+}
+
+.latest-deal-details h4 > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.article-details ul > a, .article-details ul > span {
+  font-size: 12px;
+  color: #aaa;
+}
 
 
 
@@ -465,20 +479,7 @@ del {
     align-items: flex-start;
   }
 
-  .latest-deal-details h4 {
-    margin-bottom: 8px;
-  }
-
-  .latest-deal-details h4 > a {
-    color: inherit;
-    font-weight: 700;
-    font-size: 16px;
-  }
-
-  .article-details ul > a, .article-details ul > span {
-    font-size: 12px;
-    color: #aaa;
-  }
+  
 
 }
 
@@ -735,6 +736,15 @@ del {
     color: #aaa;
   }
 
+  .latest-deals {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
   .deals-image-anchor {
     display: block;
     color: inherit;
@@ -744,6 +754,30 @@ del {
     background-repeat: no-repeat;
     background-position: 50%;
   }
+
+  .latest-deals-article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 12px;
+  }
+
+  .latest-deals-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 8px;
+  }
+
+  .deals-image-anchor {
+    height: 200px;
+  }
+
+  .latest-deals-article-container li {
+    margin-left: 0;
+  }
+
+
 
   
 }
