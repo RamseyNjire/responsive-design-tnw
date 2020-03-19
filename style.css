@@ -1032,4 +1032,9 @@ del {
   .funding-4 {
     display: block;
   }
+
+  .latest-deals {
+    padding: 6rem;
+    margin-bottom: 6rem;
+  }
 }
