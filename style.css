@@ -985,6 +985,10 @@ del {
     align-items: center;
   }
 
+  .cover-story {
+    width: 100%;
+  }
+
   .latest-news {
     max-width: 1152px;
     margin-bottom: 6rem;
