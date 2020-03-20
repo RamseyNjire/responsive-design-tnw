@@ -3,6 +3,10 @@ body {
   font-family: arial;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .section-article-heading {
   display: none;
 }
@@ -60,6 +64,28 @@ a {
   display: none;
 }
 
+.cover-story-article h4 {
+  font-size: 56px;
+    line-height: 1;
+}
+
+.cover-story-article ul {
+  display: flex;
+  padding-top: 10px;
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cover-story-article ul li {
+  display: flex;
+  padding-right: .3rem;
+  margin-left: 0px;
+}
+
+.cover-story-article ul li span {
+  padding-right: 0.5rem;
+}
 
 
 .funding-article-title {
@@ -248,7 +274,7 @@ footer {
   align-items: center;
 }
 
-.fa {
+.tar {
   background: #333;
   height: 45px;
   width: 45px;
@@ -261,7 +287,7 @@ footer {
   border-radius: 50%;
 }
 
-.fa:hover {
+.tar:hover {
   background: #131313;
 }
 
@@ -362,11 +388,30 @@ footer {
     justify-content: flex-end;
   }
 
+
+
   .cover-story-article header {
     color: white;
     padding: 14px 12px 12px 12px;
     z-index: 2;
   }
+
+  .cover-story-article h4 {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
+  }
+
+  .cover-story-article h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+
 
   .funding-rounds {
     display: flex;
@@ -621,11 +666,7 @@ footer {
 
  @media screen and (min-width: 768px) {
 
-  header {
-    position: sticky;
-    top: -2rem;
-    z-index: 99999;
-  }
+ 
 
   .search-icon {
     transform: rotate(-270deg);
@@ -763,9 +804,23 @@ footer {
     z-index: 2;
   }
 
+   .cover-story-article h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .cover-story-article h4 {
+    font-size: 14px;
+  }
+  
+  .cover-story-article ul {
+    display: flex;
+  }
+
   .story1 {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
+    font-size:40px;
   }
 
   .story-background {
@@ -882,6 +937,18 @@ footer {
   .article-details ul > a, .article-details ul > span {
     font-size: 12px;
     color: #aaa;
+  }
+
+  .funding-rounds-header a {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 2px solid
+  }
+
+  .funding-rounds-header a:nth-child(2) {
+    padding-left: 0;
+    border-left: none;
   }
 
   .latest-deals {
@@ -1027,7 +1094,11 @@ footer {
 }
 
 @media screen and (min-width:1024px) {
-  
+  header {
+    position: sticky;
+    top: -2rem;
+    z-index: 99999;
+  }
   #main-menu-links li:nth-last-child(2), #main-menu-links li:nth-last-child(1) {
     display: block;
   }
@@ -1093,6 +1164,29 @@ footer {
     line-height: 1;
     top: 24px;
   }
+
+  .funding-rounds-header h2 {
+    float: left;
+  }
+
+  .funding-rounds-header a {
+    float: right;
+  }
+
+  .funding-rounds-header a:nth-child(2) {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 2px solid
+  }
+
+  .funding-rounds-header a:nth-child(4) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+
+
   .categories {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
