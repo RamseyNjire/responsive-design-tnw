@@ -2,9 +2,9 @@
 
 > This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
-![screenshot](images/tnw-mobileview.png)
-![screenshot](images/tnw-tabletview.png)
-![screenshot](iamges/tnw-desktopview.png)
+![screenshot](Images/tnw-mobileview.png)
+![screenshot](Images/tnw-tabletview.png)
+![screenshot](Images/tnw-desktopview.png)
 
 Additional description about the project and its features.
 
@@ -15,28 +15,17 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rawcdn.githack.com/RamseyNjire/responsive-design-tnw/6a7421883b75741b4a0e258a3678959d0b802b74/index.html)
 
 
 ## Getting Started
 
-**To get a local copy of this project**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### run the following command
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+## git clone git@github.com:RamseyNjire/responsive-design-tnw.git
 
 
 
