@@ -2,9 +2,9 @@
 
 > This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
-![screenshot](Images/tnw-mobileview.png)
-![screenshot](Images/tnw-tabletview.png)
-![screenshot](Images/tnw-desktopview.png)
+![screenshot](./images/tnw-mobileview.png)
+![screenshot](./images/tnw-tabletview.png)
+![screenshot](./images/tnw-desktopview.png)
 
 Additional description about the project and its features.
 
@@ -23,9 +23,9 @@ Additional description about the project and its features.
 
 To get a local copy up and running follow these simple example steps.
 
-### run the following command
+### run the following command:
 
-## git clone git@github.com:RamseyNjire/responsive-design-tnw.git
+git clone git@github.com:RamseyNjire/responsive-design-tnw.git
 
 
 
