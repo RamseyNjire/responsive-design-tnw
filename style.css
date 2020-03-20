@@ -273,6 +273,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.site-links li {
+  color: white;
+  padding-right: 6px;
+  font-size: 11px
+}
 
 .tar {
   background: #333;
@@ -298,7 +303,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -660,8 +667,6 @@ footer {
     align-items: flex-start;
   }
 
-  
-
 }
 
  @media screen and (min-width: 768px) {
@@ -820,7 +825,11 @@ footer {
   .story1 {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
-    font-size:40px;
+  }
+
+  .story1 h2 {
+    font-size: 48px;
+    font-weight: 700;
   }
 
   .story-background {
