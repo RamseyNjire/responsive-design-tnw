@@ -1,12 +1,13 @@
 body {
   max-width: 100vw;
-  font-family: arial;
+  font-family: arial, sans-serif, serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .section-article-heading {
   display: none;
 }
@@ -16,11 +17,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 106px;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-}
-
-a {
-  text-decoration: none;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
 }
 
 .story-background {
@@ -31,7 +28,6 @@ a {
   right: 4px;
   bottom: 4px;
   z-index: -20;
-
 }
 
 .story1-background {
@@ -57,7 +53,7 @@ a {
   right: 4px;
   bottom: 4px;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
 }
 
 .red {
@@ -66,36 +62,46 @@ a {
 
 .cover-story-article h4 {
   font-size: 56px;
-    line-height: 1;
+  line-height: 1;
+}
+
+.site-links li {
+  color: white;
+  padding-right: 6px;
+  font-size: 11px;
 }
 
 .cover-story-article ul {
   display: flex;
   padding-top: 10px;
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 12px;
   line-height: 16px;
 }
 
 .cover-story-article ul li {
   display: flex;
-  padding-right: .3rem;
-  margin-left: 0px;
+  padding-right: 0.3rem;
+  margin-left: 0;
+}
+
+.article-details ul > span {
+  font-size: 12px;
+  color: #aaa;
 }
 
 .cover-story-article ul li span {
   padding-right: 0.5rem;
 }
 
-
 .funding-article-title {
-  position:relative;
+  position: relative;
 }
 
 .funding-article-title img {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   margin: 12px;
   width: 60px;
   height: 60px;
@@ -104,18 +110,26 @@ a {
 .fund-title {
   background: #f42;
   font-weight: 700;
-    line-height: 1.25;
-    margin: 0!important;
-    font-size: 18px!important;
-    color: white;
-    padding: 10.6666666667px 16px 10.6666666667px 84px;
+  line-height: 1.25;
+  margin: 0 !important;
+  font-size: 18px !important;
+  color: white;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
 }
 
 .funding-article-title div {
   padding: 10.6666666667px 16px 10.6666666667px 84px;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   margin: 0;
+}
+
+.funding-rounds a {
+  display: block;
+}
+
+.latest-deal-details h4 {
+  margin-bottom: 8px;
 }
 
 .funding-article-title div h4 {
@@ -132,7 +146,7 @@ a {
 
 .funding-label {
   padding: 16px;
-  border-bottom: 1px solid rgba(255,68,34,.25);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .funding-label a {
@@ -147,6 +161,24 @@ a {
   width: 16px;
   margin-right: 20px;
   font-size: 16px;
+}
+
+.funding-rounds-header a {
+  text-decoration: none;
+  color: #f42;
+  line-height: 18px;
+  margin-top: 11px;
+}
+
+.latest-deal-details h4 > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.article-details ul > a {
+  font-size: 12px;
+  color: #aaa;
 }
 
 .funding a:nth-child(3) {
@@ -173,17 +205,6 @@ a {
   line-height: 32px;
 }
 
-.funding-rounds-header a {
-  text-decoration: none;
-  color: #f42;
-  line-height: 18px;
-  margin-top: 11px;
-}
-
-.funding-rounds a {
-  display: block;
-}
-
 .funding-rounds article {
   min-height: 60px;
   background: #fffaf8;
@@ -194,7 +215,7 @@ a {
   display: none;
 }
 
-.latest-deals header{
+.latest-deals header {
   display: flex;
   justify-content: space-between;
 }
@@ -218,6 +239,7 @@ a {
 .deal-5 {
   background: url("images/latest-deals-5.jpg");
 }
+
 .deal-6 {
   background: url("images/latest-deals-6.jpg");
 }
@@ -225,31 +247,15 @@ a {
 .deal-7 {
   background: url("images/latest-deals-7.jpg");
 }
+
 .deal-8 {
   background: url("images/latest-deals-8.jpg");
 }
-
 
 del {
   font-size: 12px;
   color: #aaa;
 }
-
-.latest-deal-details h4 {
-  margin-bottom: 8px;
-}
-
-.latest-deal-details h4 > a {
-  color: inherit;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.article-details ul > a, .article-details ul > span {
-  font-size: 12px;
-  color: #aaa;
-}
-
 
 footer {
   border-top: 1px solid black;
@@ -272,11 +278,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.site-links li {
-  color: white;
-  padding-right: 6px;
-  font-size: 11px
 }
 
 .tar {
@@ -306,9 +307,7 @@ footer {
   text-align: center;
 }
 
-
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 767px) {
   .nav-bar-holder {
     height: 3rem;
   }
@@ -395,8 +394,6 @@ footer {
     justify-content: flex-end;
   }
 
-
-
   .cover-story-article header {
     color: white;
     padding: 14px 12px 12px 12px;
@@ -408,7 +405,7 @@ footer {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     line-height: 1.5;
   }
 
@@ -416,9 +413,7 @@ footer {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 700;
-
   }
-
 
   .funding-rounds {
     display: flex;
@@ -515,8 +510,22 @@ footer {
     align-items: flex-start;
   }
 
+  .article-link a {
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
   .article-details h4 {
     margin-bottom: 8px;
+  }
+
+  .information > a {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
   }
 
   .article-details h4 > a {
@@ -525,7 +534,12 @@ footer {
     font-size: 16px;
   }
 
-  .article-details ul > a, .article-details ul > span {
+  .information span {
+    font-size: 12px;
+  }
+
+  .article-details ul > a,
+  .article-details ul > span {
     font-size: 12px;
     color: #aaa;
   }
@@ -552,7 +566,7 @@ footer {
 
   .inner-details {
     min-height: 250px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   }
 
   .picture-anchor {
@@ -575,17 +589,6 @@ footer {
     margin-bottom: 5px;
   }
 
-  .information > a {
-    color: inherit;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-
-  .information span {
-    font-size: 12px;
-  }
-
   .information > span a {
     color: inherit;
   }
@@ -594,7 +597,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 1px;
-    background: rgba(255,68,34,.06)
+    background: rgba(255, 68, 34, 0.06);
   }
 
   .category-article-details {
@@ -619,14 +622,6 @@ footer {
     border-bottom: 1px solid #eee;
   }
 
-  .article-link a {
-    color: #555;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  /* .category */
-
   .latest-deals {
     margin-top: 2rem;
     padding: 1.2rem;
@@ -649,6 +644,7 @@ footer {
     grid-template-rows: 1fr;
     grid-gap: 8px;
   }
+
   .deals-image-anchor {
     display: block;
     color: inherit;
@@ -659,25 +655,39 @@ footer {
     background-position: 50%;
   }
 
-  .latest-deal-details{
+  .latest-deal-details {
     justify-self: left;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
 
- @media screen and (min-width: 768px) {
-
- 
-
+@media screen and (min-width: 768px) {
   .search-icon {
     transform: rotate(-270deg);
   }
 
-  #main-menu-links li:nth-last-child(2), #main-menu-links li:nth-last-child(1) {
+  li {
+    margin-left: 12px;
+  }
+
+  .latest-deals-article-container li {
+    margin-left: 0;
+  }
+
+  .search-menu li {
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+  }
+
+  .search-menu li:nth-child(2) {
+    display: none;
+  }
+
+  #main-menu-links li:nth-last-child(2),
+  #main-menu-links li:nth-last-child(1) {
     display: none;
   }
 
@@ -687,7 +697,6 @@ footer {
     font-size: 13px;
     color: #aaa;
   }
-
 
   nav {
     width: 100%;
@@ -700,17 +709,14 @@ footer {
   .tnw-logo img {
     height: 1rem;
     width: 66px;
-    padding: 20px
-  }
-
-  li {
-    margin-left: 12px;
+    padding: 20px;
   }
 
   .tnw-logo {
     height: 100%;
     width: 106px;
   }
+
   .menu-container {
     width: 100%;
   }
@@ -724,8 +730,6 @@ footer {
     position: sticky;
     top: 0;
     display: flex;
-    font-size: 13px;
-    font-weight: 500;
     width: 100%;
     height: 3rem;
     justify-content: space-between;
@@ -733,31 +737,17 @@ footer {
     background: white;
     color: black;
     z-index: 999;
-  }
-
-  .main-menu {
     font-size: 14px;
     font-weight: 600;
     padding: 0;
   }
 
-
   .main-menu ul {
     display: flex;
-  
   }
 
   .search-menu {
     padding-right: 20px;
-  }
-
-  .search-menu li {
-    border-left: 1px solid #eee;
-    padding-left: 10px;
-  }
-
-  .search-menu li:nth-child(2) {
-    display: none;
   }
 
   #menu {
@@ -776,12 +766,17 @@ footer {
     padding: 0 10px;
     box-sizing: border-box;
   }
-  .secondary-menu div{
+
+  .secondary-menu div {
     position: absolute;
     right: 12px;
   }
 
-  .secondary-menu div ul{
+  .cover-story-article ul {
+    display: flex;
+  }
+
+  .secondary-menu div ul {
     display: flex;
   }
 
@@ -809,17 +804,13 @@ footer {
     z-index: 2;
   }
 
-   .cover-story-article h2 {
+  .cover-story-article h2 {
     font-size: 20px;
     font-weight: 700;
   }
 
   .cover-story-article h4 {
     font-size: 14px;
-  }
-  
-  .cover-story-article ul {
-    display: flex;
   }
 
   .story1 {
@@ -850,7 +841,7 @@ footer {
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
   }
 
   .funding-rounds {
@@ -862,8 +853,8 @@ footer {
   }
 
   .latest-funding-view {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .latest-funding-view article {
@@ -937,22 +928,45 @@ footer {
     margin-bottom: 8px;
   }
 
+  .funding-rounds-header a {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: 2px solid;
+  }
+
+  .article-link a {
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .information > a {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
   .article-details h4 > a {
     color: inherit;
     font-weight: 700;
     font-size: 16px;
   }
 
-  .article-details ul > a, .article-details ul > span {
+  .information span {
+    font-size: 12px;
+  }
+
+  .article-details ul > a,
+  .article-details ul > span {
     font-size: 12px;
     color: #aaa;
   }
 
-  .funding-rounds-header a {
-    display: inline-block;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-left: 2px solid
+  .information > span a {
+    color: inherit;
   }
 
   .funding-rounds-header a:nth-child(2) {
@@ -992,7 +1006,7 @@ footer {
 
   .inner-details {
     min-height: 250px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   }
 
   .picture-anchor {
@@ -1015,26 +1029,11 @@ footer {
     margin-bottom: 5px;
   }
 
-  .information > a {
-    color: inherit;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-
-  .information span {
-    font-size: 12px;
-  }
-
-  .information > span a {
-    color: inherit;
-  }
-
   .category-latest-news {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 1px;
-    background: rgba(255,68,34,.06)
+    background: rgba(255, 68, 34, 0.06);
   }
 
   .category-article-details {
@@ -1059,12 +1058,6 @@ footer {
     border-bottom: 1px solid #eee;
   }
 
-  .article-link a {
-    color: #555;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.5;
-  }
   .deals-image-anchor {
     display: block;
     color: inherit;
@@ -1073,6 +1066,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+    height: 200px;
   }
 
   .latest-deals-article-container {
@@ -1088,32 +1082,24 @@ footer {
     grid-template-rows: auto 1fr;
     grid-gap: 8px;
   }
-
-  .deals-image-anchor {
-    height: 200px;
-  }
-
-  .latest-deals-article-container li {
-    margin-left: 0;
-  }
-
-
-
-  
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   header {
     position: sticky;
     top: -2rem;
     z-index: 99999;
   }
-  #main-menu-links li:nth-last-child(2), #main-menu-links li:nth-last-child(1) {
+
+  #main-menu-links li:nth-last-child(2),
+  #main-menu-links li:nth-last-child(1) {
     display: block;
   }
+
   .search-icon {
     transform: rotate(-270deg);
   }
+
   .tnw-logo {
     display: none;
   }
@@ -1126,6 +1112,7 @@ footer {
 
   .cover-story {
     width: 100%;
+    height: 50vh !important;
   }
 
   .latest-news {
@@ -1136,10 +1123,6 @@ footer {
   .latest-news-article-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-  
-  .cover-story {
-    height: 50vh!important;
   }
 
   .red {
@@ -1160,8 +1143,6 @@ footer {
   .logo-background {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
@@ -1186,15 +1167,13 @@ footer {
     display: inline-block;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-left: 2px solid
+    border-left: 2px solid;
   }
 
   .funding-rounds-header a:nth-child(4) {
     padding-left: 0;
     border-left: none;
   }
-
-
 
   .categories {
     grid-template-columns: repeat(3, 1fr);
