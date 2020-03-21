@@ -217,7 +217,8 @@ a {
   margin-bottom: 24px;
 }
 
-.funding-rounds-header h2 {
+.funding-rounds-header h2,
+.latest-deals header h2 {
   font-style: sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -266,6 +267,12 @@ a {
 .latest-deals header {
   display: flex;
   justify-content: space-between;
+  color: #f42;
+  margin-bottom: 24px;
+}
+
+.latest-deals header a {
+  color: #f42;
 }
 
 .deal-1 {
