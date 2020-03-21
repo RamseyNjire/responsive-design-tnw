@@ -3,6 +3,10 @@ body {
   font-family: arial, sans-serif, serif;
 }
 
+.topmost-layer {
+  z-index: 999999;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -70,6 +74,8 @@ a {
   display: flex;
   align-items: center;
   height: 2rem;
+  position: fixed;
+  top: 3rem;
 }
 
 .cover-story-article h4 {
@@ -1087,7 +1093,7 @@ footer {
   header {
     position: sticky;
     top: -2rem;
-    z-index: 99999;
+    /* z-index: 99999; */
   }
 
   #main-menu-links li:nth-last-child(2),
