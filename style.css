@@ -13,11 +13,18 @@ a {
 }
 
 .tnw-logo {
+  width: 106px;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+}
+
+.tnw-logo,
+.site-links,
+ .tar,
+ .social-links,
+ .legal-copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 106px;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
 }
 
 .story-background,
@@ -319,16 +326,10 @@ footer {
 .social-links {
   margin: 0 auto;
   padding-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .site-links {
   padding: 1.8rem 0 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .tar {
@@ -336,9 +337,6 @@ footer {
   height: 45px;
   width: 45px;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   border: 2px solid #333;
   border-radius: 50%;
@@ -352,9 +350,6 @@ footer {
   background: #000;
   color: #aaa;
   padding: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
