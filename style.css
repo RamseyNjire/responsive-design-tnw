@@ -23,9 +23,9 @@ a {
 
 .tnw-logo,
 .site-links,
- .tar,
- .social-links,
- .legal-copyright {
+.tar,
+.social-links,
+.legal-copyright {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,21 +97,48 @@ a {
   line-height: 16px;
 }
 
-.cover-story-article ul,
-.article-details ul > span,
-.article-details ul li > a,
-.article-details ul li > span,
-.funding a:nth-child(3),
-del,
-.information span   {
-  font-size: 12px;
-
+.funding-label a,
+.funding a {
+  font-size: 13px;
+  color: #555;
+  line-height: 22px;
+  margin-bottom: 0.5em;
 }
 
-.cover-story-article ul li {
-  display: flex;
-  padding-right: 0.3rem;
-  margin-left: 0;
+.funding-rounds a {
+  display: block;
+}
+
+.funding-rounds-header a {
+  text-decoration: none;
+  color: #f42;
+  line-height: 18px;
+  margin-top: 11px;
+}
+
+.latest-deals header a {
+  color: #f42;
+}
+
+.article-details h4 > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.latest-deal-details h4 > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.legal-copyright span {
+  max-width: 70%;
+}
+
+.cover-story-article ul,
+.information span {
+  font-size: 12px;
 }
 
 .article-details ul > span,
@@ -119,6 +146,13 @@ del,
 .article-details ul li > span,
 del {
   color: #aaa;
+  font-size: 12px;
+}
+
+.cover-story-article ul li {
+  display: flex;
+  padding-right: 0.3rem;
+  margin-left: 0;
 }
 
 .cover-story-article ul li span {
@@ -155,12 +189,12 @@ del {
   margin: 0;
 }
 
-.funding-rounds a {
-  display: block;
-}
-
 .latest-deal-details h4 {
   margin-bottom: 8px;
+}
+
+.article-details h4 {
+  margin: 4px 8px 8px 0;
 }
 
 .funding-article-title div h4 {
@@ -180,30 +214,10 @@ del {
   border-bottom: 1px solid rgba(255, 68, 34, 0.25);
 }
 
-.funding-label a {
-  font-size: 13px;
-  color: #555;
-  line-height: 22px;
-  margin-bottom: 0.5em;
-}
-
 .label {
   display: inline-block;
   width: 16px;
   margin-right: 20px;
-  font-size: 16px;
-}
-
-.funding-rounds-header a {
-  text-decoration: none;
-  color: #f42;
-  line-height: 18px;
-  margin-top: 11px;
-}
-
-.latest-deal-details h4 > a {
-  color: inherit;
-  font-weight: 700;
   font-size: 16px;
 }
 
@@ -250,11 +264,6 @@ del {
   display: none;
 }
 
-.article-details h4 {
-  margin: 4px 8px 8px 0;
-}
-
-
 .category-article-details {
   padding-top: 14px;
   padding-left: 12px;
@@ -272,22 +281,11 @@ del {
   background-position: 50%;
 }
 
-.article-details h4 > a {
-  color: inherit;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-
 .latest-deals header {
   display: flex;
   justify-content: space-between;
   color: #f42;
   margin-bottom: 24px;
-}
-
-.latest-deals header a {
-  color: #f42;
 }
 
 .deal-1 {
@@ -338,7 +336,6 @@ footer {
 
 .site-links {
   padding: 1.8rem 0 1.8rem;
-  max-width: 70%;
 }
 
 .tar {
@@ -362,10 +359,6 @@ footer {
   text-align: center;
 }
 
-.legal-copyright span {
-  max-width: 70%;
-}
-
 .ender {
   display: inline-block;
   height: 13px;
@@ -375,7 +368,7 @@ footer {
   .nav-bar-holder {
     height: 5rem;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 99999;
   }
 
@@ -596,7 +589,7 @@ footer {
   }
 
   .category-image {
-    min-height: 70vw;;
+    min-height: 70vw;
     background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/iPhone-SE-hed-368x276.jpg");
     background-size: cover;
     display: flex;
@@ -704,13 +697,14 @@ footer {
   .nav-bar-holder {
     height: 7rem;
     position: sticky;
-    top: 0px;
+    top: 0;
   }
 
   .yellow-banner {
     position: sticky;
     top: 3rem;
   }
+
   .search-icon {
     transform: rotate(-270deg);
   }
@@ -959,7 +953,6 @@ footer {
     grid-template-rows: 120px 1fr;
     grid-gap: 8px;
   }
-
 
   .article-details {
     justify-self: center;
