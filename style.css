@@ -333,10 +333,12 @@ footer {
 .social-links {
   margin: 0 auto;
   padding-top: 3rem;
+  max-width: 70%;
 }
 
 .site-links {
   padding: 1.8rem 0 1.8rem;
+  max-width: 70%;
 }
 
 .tar {
@@ -358,6 +360,10 @@ footer {
   color: #aaa;
   padding: 3rem 0;
   text-align: center;
+}
+
+.legal-copyright span {
+  max-width: 70%;
 }
 
 .ender {
