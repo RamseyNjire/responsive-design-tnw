@@ -87,8 +87,18 @@ a {
   display: flex;
   padding-top: 10px;
   color: hsla(0, 0%, 100%, 0.6);
-  font-size: 12px;
   line-height: 16px;
+}
+
+.cover-story-article ul,
+.article-details ul > span,
+.article-details ul li > a,
+.article-details ul li > span,
+.funding a:nth-child(3),
+del,
+.information span   {
+  font-size: 12px;
+
 }
 
 .cover-story-article ul li {
@@ -97,8 +107,10 @@ a {
   margin-left: 0;
 }
 
-.article-details ul > span {
-  font-size: 12px;
+.article-details ul > span,
+.article-details ul li > a,
+.article-details ul li > span,
+del {
   color: #aaa;
 }
 
@@ -197,14 +209,7 @@ a {
   margin-right: 5px;
 }
 
-.article-details ul li > a,
-.article-details ul li > span {
-  font-size: 12px;
-  color: #aaa;
-}
-
 .funding a:nth-child(3) {
-  font-size: 12px;
   font-weight: 400;
   padding: 16px;
 }
@@ -239,7 +244,7 @@ a {
 }
 
 .article-details h4 {
-  margin-top: 4px;
+  margin: 4px 8px 8px 0;
 }
 
 
@@ -310,11 +315,6 @@ a {
   background: url("images/latest-deals-8.jpg");
 }
 
-del {
-  font-size: 12px;
-  color: #aaa;
-}
-
 footer {
   border-top: 1px solid black;
 }
@@ -366,10 +366,7 @@ footer {
     z-index: 99999;
   }
 
-  .secondary-menu {
-    display: none;
-  }
-
+  .secondary-menu,
   #main-menu-links {
     display: none;
   }
@@ -544,7 +541,7 @@ footer {
 
   .latest-news-article {
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 100px 1fr;
     grid-template-rows: 1fr;
     grid-gap: 8px;
   }
@@ -569,16 +566,6 @@ footer {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 6px;
-  }
-
-  .information span {
-    font-size: 12px;
-  }
-
-  .article-details ul > a,
-  .article-details ul > span {
-    font-size: 12px;
-    color: #aaa;
   }
 
   .categories {
@@ -720,12 +707,10 @@ footer {
     margin-right: 5px;
   }
 
-  .search-menu li:nth-child(2) {
-    display: none;
-  }
-
+  .search-menu li:nth-child(2),
   #main-menu-links li:nth-last-child(2),
-  #main-menu-links li:nth-last-child(1) {
+  #main-menu-links li:nth-last-child(1),
+  #menu {
     display: none;
   }
 
@@ -788,10 +773,6 @@ footer {
     padding-right: 20px;
   }
 
-  #menu {
-    display: none;
-  }
-
   .secondary-menu {
     position: relative;
     display: flex;
@@ -824,10 +805,7 @@ footer {
     padding-left: 120px;
   }
 
-  .cover-story-article ul {
-    display: flex;
-  }
-
+  .cover-story-article ul,
   .secondary-menu div ul {
     display: flex;
   }
@@ -875,23 +853,22 @@ footer {
     font-weight: 700;
   }
 
-  .story-background {
-    background-size: 100% 100%;
+  .story-background,
+  .gradient-background {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  .story-background {
+    background-size: 100% 100%;
     z-index: -20;
   }
 
   .gradient-background {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
   }
@@ -966,10 +943,6 @@ footer {
     align-items: flex-start;
   }
 
-  .article-details h4 {
-    margin-bottom: 8px;
-  }
-
   .funding-rounds-header a {
     display: inline-block;
     padding-left: 1rem;
@@ -991,18 +964,8 @@ footer {
     margin-bottom: 6px;
   }
 
-  .information span {
-    font-size: 12px;
-  }
-
   .information > span a {
     color: inherit;
-  }
-
-  .article-details ul li > a,
-  .article-details ul li > span {
-    font-size: 12px;
-    color: #aaa;
   }
 
   .funding-rounds-header a:nth-child(2) {
