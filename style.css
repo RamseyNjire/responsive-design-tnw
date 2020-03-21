@@ -60,6 +60,15 @@ a {
   display: none;
 }
 
+.yellow-banner {
+  background: yellow;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
 .cover-story-article h4 {
   font-size: 56px;
   line-height: 1;
@@ -319,7 +328,10 @@ footer {
 
 @media screen and (max-width: 767px) {
   .nav-bar-holder {
-    height: 3rem;
+    height: 5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
   }
 
   .secondary-menu {
@@ -385,6 +397,10 @@ footer {
     color: #f42;
     height: 100%;
     width: 100%;
+  }
+
+  .yellow-banner p {
+    padding-left: 12px;
   }
 
   .cover-story {
@@ -795,6 +811,10 @@ footer {
   .secondary-menu div {
     position: absolute;
     right: 12px;
+  }
+
+  .yellow-banner p {
+    padding-left: 120px;
   }
 
   .cover-story-article ul {
