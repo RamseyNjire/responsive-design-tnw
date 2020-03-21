@@ -234,6 +234,29 @@ a {
   display: none;
 }
 
+.article-details h4 {
+  margin-top: 4px;
+}
+
+
+.category-article-details {
+  padding-top: 14px;
+  padding-left: 12px;
+  color: red;
+}
+
+.article-image-anchor {
+  display: block;
+  color: inherit;
+  min-height: 96px;
+  min-width: 96px;
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/stress-516x270.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+
 .latest-deals header {
   display: flex;
   justify-content: space-between;
@@ -517,17 +540,6 @@ footer {
     grid-gap: 8px;
   }
 
-  .article-image-anchor {
-    display: block;
-    color: inherit;
-    min-height: 72px;
-    min-width: 75px;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/stress-516x270.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
   .article-details {
     justify-self: center;
     align-self: center;
@@ -543,9 +555,11 @@ footer {
     line-height: 1.5;
   }
 
-  .article-details h4 {
+  /* .article-details h4 {
     margin-bottom: 8px;
-  }
+    padding: 20px;
+    color: red;
+  } */
 
   .information > a {
     color: inherit;
@@ -624,10 +638,6 @@ footer {
     flex-direction: row-reverse;
     padding-top: 1px;
     background: rgba(255, 68, 34, 0.06);
-  }
-
-  .category-article-details {
-    padding-top: 14px;
   }
 
   .article-links-holder {
@@ -950,16 +960,6 @@ footer {
     grid-gap: 8px;
   }
 
-  .article-image-anchor {
-    display: block;
-    color: inherit;
-    min-height: 72px;
-    min-width: 75px;
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/stress-516x270.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
 
   .article-details {
     justify-self: center;
