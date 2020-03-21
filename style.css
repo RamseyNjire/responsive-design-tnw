@@ -76,6 +76,7 @@ a {
   height: 2rem;
   position: fixed;
   top: 3rem;
+  font-size: 13px;
 }
 
 .cover-story-article h4 {
