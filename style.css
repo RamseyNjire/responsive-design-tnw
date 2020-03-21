@@ -256,6 +256,12 @@ a {
   background-position: 50%;
 }
 
+.article-details h4 > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 
 .latest-deals header {
   display: flex;
@@ -555,23 +561,11 @@ footer {
     line-height: 1.5;
   }
 
-  /* .article-details h4 {
-    margin-bottom: 8px;
-    padding: 20px;
-    color: red;
-  } */
-
   .information > a {
     color: inherit;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 6px;
-  }
-
-  .article-details h4 > a {
-    color: inherit;
-    font-weight: 700;
-    font-size: 16px;
   }
 
   .information span {
@@ -992,12 +986,6 @@ footer {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 6px;
-  }
-
-  .article-details h4 > a {
-    color: inherit;
-    font-weight: 700;
-    font-size: 16px;
   }
 
   .information span {
