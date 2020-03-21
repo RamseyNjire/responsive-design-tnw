@@ -355,6 +355,11 @@ footer {
   text-align: center;
 }
 
+.ender {
+  display: inline-block;
+  height: 13px;
+}
+
 @media screen and (max-width: 767px) {
   .nav-bar-holder {
     height: 5rem;
