@@ -1,57 +1,47 @@
-# Project Name
+# Responsive web design- Clone of Thenextweb.com
 
-> One paragraph statement about the project.
+> This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/tnw-mobileview.png)
+![screenshot](./images/tnw-tabletview.png)
+![screenshot](./images/tnw-desktopview.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML and CSS,
+- Flexbox, Grid, Float and Positioning,
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rawcdn.githack.com/RamseyNjire/responsive-design-tnw/6a7421883b75741b4a0e258a3678959d0b802b74/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### run the following command:
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+git clone git@github.com:RamseyNjire/responsive-design-tnw.git
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Ramsey Njire**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@RamseyNjire](https://github.com/RamseyNjire)
+- Twitter: [@untakenramram](https://twitter.com/untakenramram)
+- Linkedin: [Ramsey Njire](https://linkedin.com/ramsey-njire-51984931/)
 
-👤 **Author2**
+👤 **Opeyemi Oyelesi**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Opeyemi Oyelesi](https://github.com/Adedayoopeyemi)
+- Twitter: [@Oyelesiopy](https://twitter.com/oyelesiopy)
+- Linkedin: [Opeyemi Oyelesi](https://linkedin.com//opeyemioyelesi)
 
 ## 🤝 Contributing
 
