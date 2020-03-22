@@ -838,6 +838,7 @@ footer {
     grid-gap: 4px;
     height: 45vh;
     padding: 4px;
+    box-sizing: border-box;
   }
 
   .cover-story-article {
